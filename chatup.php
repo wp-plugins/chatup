@@ -4,11 +4,11 @@ require_once ABSPATH . '/wp-admin/includes/file.php';
 Plugin Name: ChatUP
 Plugin URI: http://chatup.it/wordpress
 Description: Chat with operator integration: see http://chatup.it
-Tags: chat, operator chat, chat con operatore
+Tags: operator chat, online operator, chat with operator, online support, live support, live operator, chat con operatore, supporto online
 Text Domain: chatup
 Author: hyppoCom
 Author URI: http://hyppo.com/
-Version: 1.0
+Version: 1.1
 License: GPL2
 
  * 
