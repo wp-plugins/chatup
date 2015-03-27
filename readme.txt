@@ -15,6 +15,8 @@ The operator logs in the ChatUP site and waits visitors chat requests. The chat 
 = Features =
 * Very simple to configure
 * Chat button available as WP widget for fast deployment
+* Operator-initiated chat session
+* Real-time monitoring of web site visitors
 * Italian and English localization
 
 = Important notice =
@@ -46,6 +48,13 @@ of the "Operator online" icon.
 = Is the service free? =
 There is a trial period free, then for high traffic sites there is an annual fee. The restriction is based on the number of exposures of the "Operator Available" button.
 We estimated that the restricion allows the majority of personal websites to continue to use the free version.
+
+== Screenshots ==
+
+1. "Chat with operator" icon on your site
+2. Chat request by visitor
+3. Operator answer waiting (visitor side)
+3. Chat session (visitor side)
 
 == Changelog ==
 
