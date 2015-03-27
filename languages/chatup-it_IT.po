@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Brute Force Login Protection package.
 msgid ""
 msgstr ""
-"Project-Id-Version: ChatUP 1.0\n"
+"Project-Id-Version: ChatUP 1.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/chatup\n"
 "POT-Creation-Date: 2014-09-27 13:43:06+00:00\n"
 "PO-Revision-Date: 2015-02-15 02:22+0100\n"
@@ -37,6 +37,18 @@ msgstr "Esempio"
 #: includes/settings-page.php:74
 msgid "Campaign (obtain yours from"
 msgstr "Campagna (ottieni il tuo codice da"
+
+msgid "Hide chat icon when no operators are available"
+msgstr "Nascondi icona se non ci sono operatori disponibili"
+
+msgid "Image URL for operator online [optional]"
+msgstr "URL dell'immagine per operatore online [opzionale]"
+
+msgid "Image URL for operator offline (no operators available) [optional]"
+msgstr "URL dell'immagine per operatore offline [opzionale]"
+
+msgid "If not absolute, relative to this site"
+msgstr "Se non assoluto, relativo a questo sito"
 
 #: includes/settings-page.php:96
 msgid "Save"

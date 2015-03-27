@@ -3,7 +3,7 @@ Contributors: hyppoCom
 Tags: operator chat, online operator, chat with operator, online support, live support, live operator, chat con operatore, supporto online
 Requires at least: 3.8.5
 Tested up to: 4.1.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 
 Chat with operator button for your site using ChatUP hosted service
@@ -60,3 +60,6 @@ We estimated that the restricion allows the majority of personal websites to con
 
 = 1.0 =
 * Initial version
+
+= 1.1 =
+* Added options (hide unavailable, custom image urls)

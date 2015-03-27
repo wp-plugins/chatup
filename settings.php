@@ -17,8 +17,21 @@
             <form method="post" action="options.php"> 
                 <?php settings_fields('chatup'); ?>
                 <div class="inside">
+
                     <p><strong><?php _e('Campaign (obtain yours from','chatup'); ?> <a href='//chatup.it' target='_blank'>http://chatup.it/</a>):</strong></p>
                     <p><input type="number" min="1" max="9999" name="chatup_campaign" value="<?php echo $this->__options['campaign']; ?>" /></p>
+
+                    <p><strong><?php _e('Hide chat icon when no operators are available', 'chatup'); ?> (offline):</strong></p>
+                    <p><input type="checkbox" name="chatup_hide_na" value="true" <?php echo ($this->__options['hide_na'])?'checked':''; ?> /></p>
+
+                    <p><strong><?php _e('Image URL for operator online [optional]', 'chatup'); ?>:</strong></p>
+                    <p><input type="text" name="chatup_online_img" value="<?php echo $this->__options['online_img']; ?>" size=40 /><br>
+		    <i><?PHP _e('If not absolute, relative to this site'); ?></i></p>
+
+                    <p><strong><?php _e('Image URL for operator offline (no operators available) [optional]', 'chatup'); ?>:</strong></p>
+                    <p><input type="text" name="chatup_offline_img" value="<?php echo $this->__options['offline_img']; ?>" size=40 /><br>
+		    <i><?PHP _e('If not absolute, relative to this site'); ?></i></p>
+
                     <?php submit_button(__('Save','chatup'),'primary','submit',false); ?>
 		    <br>
                 </div>

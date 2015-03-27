@@ -114,12 +114,18 @@ class ChatUP {
      */
     public function wpFooterScript($arg) {
 	$cid=$this->__fillOption('campaign');
+	$hide_na=$this->__fillOption('hide_na');
+	$online_img=$this->__fillOption('online_img');
+	$offline_img=$this->__fillOption('offline_img');
 	$s="<script>\n".
 	   "var _chatup=_chatup||[];\n".
 	   "document.addEventListener('DOMContentLoaded',function(e) {\n".
 	   "	var x=document.getElementById('chatup_but');\n".
 	   "	if(x) {\n".
 	   "		_chatup.push('setCampaign','$cid');\n".
+	   ($hide_na?"		_chatup.push('setHideUnavailable',true);":"").
+	   ($online_img?"	_chatup.push('setOnlineImage','$online_img');":"").
+	   ((!$hide_na && $offline_img)?"	_chatup.push('setOfflineImage','$offline_img');":"").
 	   "		_chatup.push('showButton','chatup_but');\n".
 	   "		(function(c,h,a,t) { t=h.createElement(c); t.async=1; t.src='//chatup.it/chatup.js'; a=h.getElementsByTagName(c)[0]; a.parentNode.insertBefore(t,a) })('script',document);\n".
 	   "	}\n".
@@ -153,6 +159,9 @@ class ChatUP {
     private function __setDefaultOptions() {
         $this->__options = array(
             'campaign'		=> 0,	// Campaign ID
+            'hide_na'		=> 0,	// Hide if no operators available
+            'online_img'	=> "",	// Image URL
+            'offline_img'	=> "",	// Image URL
         );
     }
 
@@ -164,6 +173,9 @@ class ChatUP {
     private function __registerOptions() {
         // register_setting('chatup','chatup_campaign',array($this,'validateCampaign'));
         register_setting('chatup','chatup_campaign');
+        register_setting('chatup','chatup_hide_na');
+        register_setting('chatup','chatup_online_img');
+        register_setting('chatup','chatup_offline_img');
     }
 
     /**
@@ -173,6 +185,9 @@ class ChatUP {
      */
     private function __deleteOptions() {
         delete_option('chatup_campaign');
+        delete_option('chatup_hide_na');
+        delete_option('chatup_online_img');
+        delete_option('chatup_offline_img');
     }
 
     /**
@@ -182,6 +197,9 @@ class ChatUP {
      */
     private function __fillOptions() {
         $this->__fillOption('campaign');
+        $this->__fillOption('hide_na');
+        $this->__fillOption('online_img');
+        $this->__fillOption('offline_img');
     }
 
     /**
