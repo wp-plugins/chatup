@@ -2,7 +2,7 @@
 Contributors: hyppoCom
 Tags: operator chat, online operator, chat with operator, online support, live support, live operator, chat con operatore, supporto online
 Requires at least: 3.8.5
-Tested up to: 4.1.1
+Tested up to: 4.2.1
 Stable tag: 1.1
 License: GPLv2
 
